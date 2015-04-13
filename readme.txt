@@ -33,4 +33,8 @@ To install the plugin follow these instructions:
 = 0.1 =
 * Initial release.
 
-== Upgrade Notice ==    
+== Frequently Asked Questions ==
+
+= Is this plugin awesome? =
+
+Yes.
