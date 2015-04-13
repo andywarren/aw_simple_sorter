@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-AW Simple Sorter will allow you to display a set of posts in a responsive portfolio type layout and sort them by category similar to the way jQuery Quicksand works.
+AW Simple Sorter allows you to display a set of posts in a responsive portfolio type layout and sort them by category similar to jQuery Quicksand.
 
 == Description ==
 
