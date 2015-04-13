@@ -11,7 +11,7 @@ AW Simple Sorter allows you to display a set of posts in a responsive portfolio 
 
 == Description ==
 
-AW Simple Sorter will allow you to display a set of posts in a responsive portfolio type layout and sort them by category similar to the way jQuery Quicksand works. Usage instructions included on plugin documentation page.
+AW Simple Sorter allows you to display a set of posts in a responsive portfolio type layout and sort them by category similar to the way jQuery Quicksand works. Usage instructions included on plugin documentation page.
 
 == Installation ==
 

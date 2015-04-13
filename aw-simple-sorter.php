@@ -171,7 +171,7 @@ function aw_simple_sorter_creator($atts) {
 	$showTitle = $a['show_title'];
 	
 	// set variable from the animation shortcode attribute
-	$chosenUIeffect = $a['animation'];
+	$chosenUIeffect = strtolower($a['animation']);
 	if (empty($chosenUIeffect) || $chosenUIeffect == 'scale' || $chosenUIeffect == 'size' || $chosenUIeffect == 'transfer') {
 		$chosenUIeffect = 'fade';
 	}

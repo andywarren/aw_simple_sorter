@@ -25,7 +25,7 @@
 							
 							<h4>Step 2</h4>
 							
-							<p>The second step will be to add some posts. to add posts click here: <strong><a href="<?php echo site_url(); ?>/wp-admin/post-new.php?post_type=awsimplesorter">Add New</a></strong>, or click the link to the left in the Simple Sorter submenu. You can use a plugin such as <strong><a target="_blank" href="https://pippinsplugins.com/products/easy-content-types/?ref=384">Easy Content Types</a></strong> to add metaboxes and metafields to your Simple Sorter post type. Metafields can then be displayed on the single post page for each item in your Simple Sorter.</p>
+							<p>The second step will be to add some posts. to add posts click here: <strong><a href="<?php echo site_url(); ?>/wp-admin/post-new.php?post_type=awsimplesorter">Add New</a></strong>, or click the link to the left in the Simple Sorter submenu. You can use a plugin such as <strong><a target="_blank" href="https://pippinsplugins.com/products/easy-content-types/?ref=384">Easy Content Types</a></strong> to add metaboxes and metafields to your Simple Sorter post type. Metafields can then be displayed on the single post page for each item in your Simple Sorter. Use the <strong>Featured Image</strong> to upload the image you wish to show for the item in the Simple Sorter</p>
 							
 							<p>The single post page for each item will use the standard <strong>single.php</strong> file in your theme. You can set up a custom one by creating a new file called <strong>single-awsimplesorter.php</strong> in the root of your theme directory. In the custom one you can display any other info you'd like, including custom metafields if you set any up.</p>
 							
@@ -87,11 +87,15 @@
 						<h3 class="hndle"><span>Quick Info</span></h3>
 
 						<div class="inside">
-							<p>Shortcode Reference: <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade"]</code></p>
+							<p><strong>Shortcode Reference:</strong><br/>
+								Default: <code>[aw_simple_sorter]</code>
+								<br/><br/>
+								With Options: <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade"]</code>
+								</p>
 							
-							<p>GitHub Repo: <a target="_blank" href="https://github.com/andywarren/aw_simple_sorter">https://github.com/andywarren/aw_simple_sorter</a></p>
+							<p><strong>GitHub Repo:</strong> <a target="_blank" href="https://github.com/andywarren/aw_simple_sorter">https://github.com/andywarren/aw_simple_sorter</a></p>
 							
-							<p>Like this plugin? Buy me a beer!</p>
+							<p><strong>Like this plugin? Buy me a beer!</strong></p>
 							
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 								<input type="hidden" name="cmd" value="_s-xclick">
