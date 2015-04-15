@@ -107,7 +107,6 @@ if ( ! function_exists('register_awsimplesorter_posttype') ) {
 
 }
 	
-	
 
 if ( ! function_exists( 'register_awsscategories_tax' ) ) {
 
