@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: AW Simple Sorter
-Plugin URI: 
+Plugin URI: https://github.com/andywarren/aw_simple_sorter
 Description: Simple sorting of a post type to be used in a portfolio type scenario 
 Version: 0.1
 Author: Andy Warren
