@@ -1,4 +1,4 @@
-=== AW WordPress Yearly Category Archives ===
+=== AW Simple Sorter ===
 Contributors: AndyWarren 
 Tags: Simple Sorter, Quicksand, Portfolio Sorting, Portfolio, Responsive, Responsive Portfolio
 Requires at least: 3.5.2
