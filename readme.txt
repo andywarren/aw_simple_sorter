@@ -16,7 +16,7 @@ AW Simple Sorter allows you to display a set of posts in a responsive portfolio 
 Want to make this plugin better? Fork and submit pull requests on [Github](https://github.com/andywarren/aw_simple_sorter)!
 
 
-** To Do List **
+**To Do List**
 
 * Add Lightbox/Colorbox/Fancybox to Simple Sorter
 
@@ -49,6 +49,6 @@ Yes.
 
 = Can I make it more awesome? =
 
-[Yes.](https://github.com/andywarren/aw_simple_sorter).
+[Yes](https://github.com/andywarren/aw_simple_sorter).
 
 
