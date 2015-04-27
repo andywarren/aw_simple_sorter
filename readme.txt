@@ -2,7 +2,7 @@
 Contributors: AndyWarren 
 Tags: Simple Sorter, Quicksand, Portfolio Sorting, Portfolio, Responsive, Responsive Portfolio
 Requires at least: 3.5.2
-Tested up to: 4.1.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,7 +11,7 @@ AW Simple Sorter allows you to display a set of posts in a responsive portfolio 
 
 == Description ==
 
-AW Simple Sorter allows you to display a set of posts in a responsive portfolio type layout and sort them by category similar to the way jQuery Quicksand works. Usage instructions included on plugin documentation page.
+AW Simple Sorter allows you to display a set of posts in a responsive portfolio type layout and sort/filter them by category similar to the way jQuery Quicksand works. Utilize jQuery UI Effects for the show/hide of portfolio items. Usage instructions included on plugin documentation page.
 
 == Installation ==
 
@@ -24,9 +24,10 @@ To install the plugin follow these instructions:
 
 == Screenshots ==
 
-1. Show all items in Simple Sorter
-2. Show only items in specific category.
-3. Easy and familiar. Create categories and add posts!   
+1. Simple and familiar. Create categories and add posts!
+2. Show all items in Simple Sorter
+3. Show only items in specific category.
+4. Responsive and mobile ready!   
 
 == Changelog ==
 
