@@ -3,7 +3,7 @@ Contributors: awarren
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C6AZTULD7TEMA 
 Tags: Simple Sorter, Quicksand, Portfolio Sorting, Portfolio, Responsive, Responsive Portfolio
 Requires at least: 3.5.2
-Tested up to: 4.2
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -40,6 +40,9 @@ To install the plugin follow these instructions:
 4. Responsive and mobile ready!   
 
 == Changelog ==
+
+= 0.3 =
+* No plugin changes, just updated compatibility to WordPress v4.3.1
 
 = 0.2 =
 * Update plugin documentation/readme.txt to include notice of plugin requiring wp_footer() in theme.
