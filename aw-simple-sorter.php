@@ -58,6 +58,28 @@ add_action( 'wp_enqueue_scripts', 'aw_ss_stylesheet');
 // Add a custom image size for the post's featured image
 add_image_size( 'aw_ss_featured_image_480x320', 512, 341, true );
 
+// Run aw_ss_activate() when plugin is activated
+register_activation_hook(__FILE__,'aw_ss_activate');
+
+// Run aw_ss_deactivate() when plugin is deactivated
+register_deactivation_hook( __FILE__, 'aw_ss_deactivate' );
+
+// Function to create new database field in wp_options
+function aw_ss_activate() {
+	add_option('aw_ss_customPermalinkSlug', 'aw-simple-sorter', '', 'no');
+}
+
+// Delete the aw_ss_customPermalinkSlug database field in wp_options
+function aw_ss_deactivate() {
+	delete_option('aw_ss_customPermalinkSlug');
+}
+
+if (isset($_POST["aw_ss_issetChecker"])) {
+	$awSScustomPermalink = $_POST["aw_ss_custPerm"];
+	$awSScustomPermalink = preg_replace('/\s+/', '', $awSScustomPermalink);  
+	update_option('aw_ss_customPermalinkSlug', $awSScustomPermalink);
+}
+
 
 if ( ! function_exists('register_awsimplesorter_posttype') ) {
 
@@ -94,7 +116,7 @@ if ( ! function_exists('register_awsimplesorter_posttype') ) {
 			'capability_type' 	=> 'post',
 			'has_archive' 		=> false,
 			'hierarchical' 		=> false,
-			'rewrite' 			=> array('slug' => 'aw_simple_sorter', 'with_front' => false ),
+			'rewrite' 			=> array('slug' => get_option('aw_ss_customPermalinkSlug'), 'with_front' => false ),
 			'supports' 			=> $supports,
 			'menu_position' 	=> 25,
 			'menu_icon' 		=> plugins_url('/img/layers.png', __FILE__),
@@ -147,7 +169,11 @@ if ( ! function_exists( 'register_awsscategories_tax' ) ) {
 // Create an options page for the Simple Sorter Post Type
 function aw_ss_add_options_page() {
 	add_submenu_page('edit.php?post_type=awsimplesorter', 'AW Simple Sorter Documentation', 'Documentation', 'publish_posts', 'aw-simple-sorter/aw-ss-docs.php');
+	add_submenu_page('edit.php?post_type=awsimplesorter', 'AW Simple Sorter Options', 'Options', 'publish_posts', 'aw-simple-sorter/aw-ss-options.php');
 }
+
+
+
 
 // Add the Simple Sorter options page to the admin area
 add_action('admin_menu' , 'aw_ss_add_options_page');

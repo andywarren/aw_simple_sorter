@@ -20,8 +20,10 @@
 
 						<div class="inside">
 							<h4>Step 1</h4>
+							
+							<p><strong>Resave your permalinks!</strong> You can do this by clicking here: <a href="<?php echo site_url(); ?>/wp-admin/options-permalink.php">Permalinks</a>, and then click the "Save Changes" button at the bottom of the screen. Make sure you do this upon activating the plugin, and also if you update your permalink slug.</p>
 
-							<p>The first step will be to create some categories for your simple sorter. To do this you'll click on <strong><a href="<?php echo site_url(); ?>/wp-admin/edit-tags.php?taxonomy=awsscategories&post_type=awsimplesorter">AW SS Categories</a></strong> in the Simple Sorter submenu to the left or right here on this link. Once there, give your category a name and leave the remaining fields alone. Click the blue "Add New AW SS Category" button to add the category. Repeat this to add all the categories you'd like to use. These categories are specific to the Simple Sorter post type and will not show up on other posts types.</p>
+							<p>The first step after resaving your permalins will be to create some categories for your simple sorter. To do this you'll click on <strong><a href="<?php echo site_url(); ?>/wp-admin/edit-tags.php?taxonomy=awsscategories&post_type=awsimplesorter">AW SS Categories</a></strong> in the Simple Sorter submenu to the left or right here on this link. Once there, give your category a name and leave the remaining fields alone. Click the blue "Add New AW SS Category" button to add the category. Repeat this to add all the categories you'd like to use. These categories are specific to the Simple Sorter post type and will not show up on other posts types.</p>
 							
 							<h4>Step 2</h4>
 							
