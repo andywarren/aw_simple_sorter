@@ -3,7 +3,7 @@
 Plugin Name: AW Simple Sorter
 Plugin URI: https://github.com/andywarren/aw_simple_sorter
 Description: Simple sorting of a post type to be used in a portfolio type scenario 
-Version: 0.3
+Version: 0.4
 Author: Andy Warren
 Author URI: http://www.andy-warren.net
 

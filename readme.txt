@@ -41,6 +41,9 @@ To install the plugin follow these instructions:
 
 == Changelog ==
 
+= 0.4 =
+* Added ability to use a custom permalink slug with the Simple Sorter post type.
+
 = 0.3 =
 * No plugin changes, just updated compatibility to WordPress v4.3.1
 
