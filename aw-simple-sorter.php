@@ -61,12 +61,18 @@ add_image_size( 'aw_ss_featured_image_480x320', 512, 341, true );
 // Run aw_ss_activate() when plugin is activated
 register_activation_hook(__FILE__,'aw_ss_activate');
 
-// Run aw_ss_deactivate() when plugin is deactivated
-register_deactivation_hook( __FILE__, 'aw_ss_deactivate' );
-
 // Function to create new database field in wp_options
 function aw_ss_activate() {
 	add_option('aw_ss_customPermalinkSlug', 'aw-simple-sorter', '', 'no');
+}
+
+$aw_ss_optionCheck = get_option('aw_ss_customPermalinkSlug');
+
+if ($aw_ss_optionCheck == 'aw-simple-sorter') {
+
+	// Run aw_ss_deactivate() when plugin is deactivated
+	register_deactivation_hook( __FILE__, 'aw_ss_deactivate' );
+
 }
 
 // Delete the aw_ss_customPermalinkSlug database field in wp_options
