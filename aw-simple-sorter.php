@@ -3,7 +3,7 @@
 Plugin Name: AW Simple Sorter
 Plugin URI: https://github.com/andywarren/aw_simple_sorter
 Description: Simple sorting of a post type to be used in a portfolio type scenario 
-Version: 0.4
+Version: 0.5
 Author: Andy Warren
 Author URI: http://www.andy-warren.net
 
@@ -190,6 +190,7 @@ function aw_simple_sorter_creator($atts) {
 		'show_posts' => '-1',
 		'animation' => 'fade',
 		'show_title' => '',
+		'hover_overlay' => 'true',
 	), $atts );
 	
 	// set variable from the show_posts shortcode attribute 
@@ -206,6 +207,9 @@ function aw_simple_sorter_creator($atts) {
 	if (empty($chosenUIeffect) || $chosenUIeffect == 'scale' || $chosenUIeffect == 'size' || $chosenUIeffect == 'transfer') {
 		$chosenUIeffect = 'fade';
 	}
+	
+	// set variable from the hover_overlay shortcode attribute
+	$hoverOverlay = $a['hover_overlay'];
 	
 	if (!wp_script_is('jquery-ui-core', $list = 'enqueued' )) {
 		wp_enqueue_script('jquery-ui-core');	
@@ -270,18 +274,32 @@ function aw_simple_sorter_creator($atts) {
 			
 			<div class="aw_ss_post_wrapper <?php foreach( $aw_ss_post_terms as $aw_ss_post_term ) echo ' aw_ss_' . $aw_ss_post_term->slug; ?>">
 				
-				<div class="aw_ss_hoverbox"><a class="aw_read_more" href="<?php the_permalink(); ?>">Read More</a></div>
-				
 				<?php
+					if ($hoverOverlay == 'true') { ?>
+				
+						<div class="aw_ss_hoverbox"><a class="aw_read_more" href="<?php the_permalink(); ?>">Read More</a></div>
+					
+					<?php }
+				
 					if ($showTitle == 'true') { ?>
 						<div class="aw_title_wrapper">	
 							<h3><?php the_title(); ?></3>
 						</div> 
-				<?php } ?>
+				<?php }
+					
+					if ($hoverOverlay != 'true') {	
+					
+				?>
 				
-				<?php the_post_thumbnail('aw_ss_featured_image_480x320', array( 'class' => 'aw_ss_featured_image' )); ?>
+				<a href="<?php the_permalink(); ?>">
+					
+					<?php } the_post_thumbnail('aw_ss_featured_image_480x320', array( 'class' => 'aw_ss_featured_image' ));
+						
+				if ($hoverOverlay != 'true') { ?> 
 				
+				</a>
 				
+				<?php }	?>
 			
 			</div>
 			

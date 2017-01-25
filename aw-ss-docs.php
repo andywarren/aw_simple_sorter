@@ -35,7 +35,7 @@
 							
 							<p>The last step is to set up the Simple Sorter shortcode and place it in your theme or on a page where you want to display the Simple Sorter.</p>
 							
-							<p>The shortcode has a couple of options you can use. The full shortcode looks like this: <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade"].</code> The shortcode attributes are defined below for your reference.</p>
+							<p>The shortcode has a couple of options you can use. The full shortcode looks like this: <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade" hover_overlay="true"].</code> The shortcode attributes are defined below for your reference.</p>
 							
 							<ul>
 								<li><code>show_title="true"</code> will display each post's title on the Simple Sorter - set to <code>show_title="false"</code> or leave it entirely out to hide the post titles.</li>
@@ -56,13 +56,14 @@
 										<li>Slide</li>
 									</ol>
 								</li>
+								<li><code>hover_overlay="true"</code> will show an overlay with a "Read More" button that links to the post - set to <code>hover_overlay="false"</code> to not have an overlay effect on hover and just wrap the featured image in a link to the post.</li>
 							</ul>
 							
-							<p>Place the shorcode with the attributes you choose to include into a theme file using <code>&lt;?php echo do_shortcode('[aw_simple_sorter show_title="true" show_posts="-1" animation="fade"]'); ?&gt;</code>.</p>
+							<p>Place the shorcode with the attributes you choose to include into a theme file using <code>&lt;?php echo do_shortcode('[aw_simple_sorter show_title="true" show_posts="-1" animation="fade" hover_overlay="true"]'); ?&gt;</code>.</p>
 							
 							<p><strong>OR</strong></p>
 							
-							<p>Place the shortcode <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade"]</code> with the attributes you choose to include directly into a page editor in the WordPress admin area. </p>
+							<p>Place the shortcode <code>[aw_simple_sorter show_title="true" show_posts="-1" animation="fade" hover_overlay="true"]</code> with the attributes you choose to include directly into a page editor in the WordPress admin area. </p>
 						
 						</div>
 						<!-- .inside -->

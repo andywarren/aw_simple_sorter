@@ -3,7 +3,7 @@ Contributors: awarren
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C6AZTULD7TEMA 
 Tags: Simple Sorter, Quicksand, Portfolio Sorting, Portfolio, Responsive, Responsive Portfolio
 Requires at least: 3.5.2
-Tested up to: 4.7
+Tested up to: 4.7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,9 @@ To install the plugin follow these instructions:
 == Changelog ==
 
 = 0.4 =
+* Added ability to not have the hover overlay affect with a Read More link in it. New option allows for just linking the featured image thumbnail to the single post instead.
+
+= 0.4 =
 * Added ability to use a custom permalink slug with the Simple Sorter post type.
 
 = 0.3 =
@@ -62,5 +65,3 @@ Yes.
 = Can I make it more awesome? =
 
 [Yes](https://github.com/andywarren/aw_simple_sorter).
-
-
